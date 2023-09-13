@@ -2,7 +2,7 @@ import requests
 
 
 class ListDomains:
-    def __init__(self, apikey: str, email: str):
+    def __init__(self, email: str, apikey: str):
         AccountsURL = "https://api.cloudflare.com/client/v4/accounts"
         self.email = email
         self.apikey = apikey
@@ -40,8 +40,25 @@ class ListDomains:
             raise Exception("NoOwnershipError")
 
 
-if __name__ == "__main__":
-    email = input("enter email: ")
-    apikey = input("enter api key: ")
-    e = ListDomains(apikey, email)
-    print(str(e.GetDomainId(input("enter domain to search id"))))
+class ViewDomainRecords:
+    def __init__(self, Email: str, ApiKey: str):
+        AccountsURL = "https://api.cloudflare.com/client/v4/accounts"
+        self.Email = Email
+        self.ApiKey = ApiKey
+        self.Headers = {
+            "Content-Type": "application/json",
+            "X-Auth-Email": f"{self.Email}",
+            "X-Auth-Key": f"{self.ApiKey}"
+        }
+        response = requests.request("GET", AccountsURL, headers=self.Headers)
+        data = response.json()
+        if data["success"] == True:
+            self.accountid = data["result"][0]["id"]
+        else:
+            raise Exception("Errors: "+str(data['errors'][0]))
+
+    def ListDomainRecordsData(self, DomainId):
+        ListDomainURL = f"https://api.cloudflare.com/client/v4/zones/{DomainId}/dns_records"
+        response = requests.request(
+            "GET", url=ListDomainURL, headers=self.Headers)
+        return response.json()["result"]
