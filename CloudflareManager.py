@@ -2,7 +2,7 @@ import requests
 
 
 class ListDomains:
-    def __init__(self, apikey, email):
+    def __init__(self, apikey: str, email: str):
         AccountsURL = "https://api.cloudflare.com/client/v4/accounts"
         self.email = email
         self.apikey = apikey
@@ -32,9 +32,16 @@ class ListDomains:
         self.DomainInfo = dict(self.DomainInfo)
         return self.DomainInfo
 
+    def GetDomainId(self, Domain: str):
+        OwnedDomains = self.GetDomainData()
+        if Domain in OwnedDomains.keys():
+            return OwnedDomains[Domain]
+        else:
+            raise Exception("NoOwnershipError")
+
 
 if __name__ == "__main__":
     email = input("enter email: ")
     apikey = input("enter api key: ")
     e = ListDomains(apikey, email)
-    print(str(e.GetDomainData()))
+    print(str(e.GetDomainId(input("enter domain to search id"))))
