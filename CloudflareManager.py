@@ -1,7 +1,7 @@
 import requests
 
 
-class ListDomains:
+class CloudflareManager:
     def __init__(self, email: str, apikey: str):
         AccountsURL = "https://api.cloudflare.com/client/v4/accounts"
         self.email = email
