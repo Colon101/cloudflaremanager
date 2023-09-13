@@ -39,26 +39,22 @@ class ListDomains:
         else:
             raise Exception("NoOwnershipError")
 
-
-class ViewDomainRecords:
-    def __init__(self, Email: str, ApiKey: str):
-        AccountsURL = "https://api.cloudflare.com/client/v4/accounts"
-        self.Email = Email
-        self.ApiKey = ApiKey
-        self.Headers = {
-            "Content-Type": "application/json",
-            "X-Auth-Email": f"{self.Email}",
-            "X-Auth-Key": f"{self.ApiKey}"
-        }
-        response = requests.request("GET", AccountsURL, headers=self.Headers)
-        data = response.json()
-        if data["success"] == True:
-            self.accountid = data["result"][0]["id"]
-        else:
-            raise Exception("Errors: "+str(data['errors'][0]))
-
     def ListDomainRecordsData(self, DomainId):
         ListDomainURL = f"https://api.cloudflare.com/client/v4/zones/{DomainId}/dns_records"
         response = requests.request(
-            "GET", url=ListDomainURL, headers=self.Headers)
-        return response.json()["result"]
+            "GET", url=ListDomainURL, headers=self.headers)
+        name = []
+        id = []
+        content = []
+        recordtype = []
+        data = response.json()["result"]
+        for i in range(len(data)):
+            name.append(data[i]["name"])
+            id.append(data[i]["id"])
+            recordtype.append(data[i]["type"])
+            content.append(data[i]["content"])
+        DomainRecordsData = {}
+        for i in range(len(data)):
+            DomainRecordsData[f"{name[i]}"] = {"id": id[i],
+                                               "type": recordtype[i], "content": content[i]}
+        return DomainRecordsData

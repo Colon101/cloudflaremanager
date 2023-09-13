@@ -1,0 +1,276 @@
+{
+    "result": [
+        {
+            "id": "08fcf7f6cc4a6558e75feb5bfc11d050",
+            "zone_id": "0eed8dc77fa54dde6ec0134e79e6745c",
+            "zone_name": "tavernxkobold.xyz",
+            "name": "termigui.tavernxkobold.xyz",
+            "type": "A",
+            "content": "139.144.177.42",
+            "proxiable": true,
+            "proxied": true,
+            "ttl": 1,
+            "locked": false,
+            "meta": {
+                "auto_added": false,
+                "managed_by_apps": false,
+                "managed_by_argo_tunnel": false,
+                "source": "primary"
+            },
+            "comment": null,
+            "tags": [],
+            "created_on": "2023-07-01T19:40:32.158748Z",
+            "modified_on": "2023-07-01T19:40:32.158748Z"
+        },
+        {
+            "id": "328380150386c8738fac5415f7a529a9",
+            "zone_id": "0eed8dc77fa54dde6ec0134e79e6745c",
+            "zone_name": "tavernxkobold.xyz",
+            "name": "testing.tavernxkobold.xyz",
+            "type": "A",
+            "content": "198.51.100.4",
+            "proxiable": true,
+            "proxied": false,
+            "ttl": 3600,
+            "locked": false,
+            "meta": {
+                "auto_added": false,
+                "managed_by_apps": false,
+                "managed_by_argo_tunnel": false,
+                "source": "primary"
+            },
+            "comment": "FUCK U",
+            "tags": [],
+            "created_on": "2023-09-02T17:40:31.943433Z",
+            "modified_on": "2023-09-02T17:50:15.736434Z"
+        },
+        {
+            "id": "d3d7ae0c362f1e2c47ced4d7e701bd5f",
+            "zone_id": "0eed8dc77fa54dde6ec0134e79e6745c",
+            "zone_name": "tavernxkobold.xyz",
+            "name": "www.tavernxkobold.xyz",
+            "type": "A",
+            "content": "139.162.151.246",
+            "proxiable": true,
+            "proxied": true,
+            "ttl": 1,
+            "locked": false,
+            "meta": {
+                "auto_added": false,
+                "managed_by_apps": false,
+                "managed_by_argo_tunnel": false,
+                "source": "primary"
+            },
+            "comment": null,
+            "tags": [],
+            "created_on": "2023-05-22T07:47:38.465513Z",
+            "modified_on": "2023-05-22T07:48:29.49963Z"
+        },
+        {
+            "id": "99245f0440869936301b3fe90315d0b0",
+            "zone_id": "0eed8dc77fa54dde6ec0134e79e6745c",
+            "zone_name": "tavernxkobold.xyz",
+            "name": "www.tavernxkobold.xyz",
+            "type": "AAAA",
+            "content": "2a01:7e01::f03c:93ff:fe19:874e",
+            "proxiable": true,
+            "proxied": true,
+            "ttl": 1,
+            "locked": false,
+            "meta": {
+                "auto_added": false,
+                "managed_by_apps": false,
+                "managed_by_argo_tunnel": false,
+                "source": "primary"
+            },
+            "comment": null,
+            "tags": [],
+            "created_on": "2023-05-22T08:00:25.533574Z",
+            "modified_on": "2023-05-22T08:00:25.533574Z"
+        },
+        {
+            "id": "cae7993c69c574332ee1c174f44b2469",
+            "zone_id": "0eed8dc77fa54dde6ec0134e79e6745c",
+            "zone_name": "tavernxkobold.xyz",
+            "name": "kobold.tavernxkobold.xyz",
+            "type": "CNAME",
+            "content": "ddffba1b-6cbb-4fe9-b4e8-0ed9475a9e98.cfargotunnel.com",
+            "proxiable": true,
+            "proxied": true,
+            "ttl": 1,
+            "locked": false,
+            "meta": {
+                "auto_added": false,
+                "managed_by_apps": false,
+                "managed_by_argo_tunnel": false,
+                "source": "primary"
+            },
+            "comment": null,
+            "tags": [],
+            "created_on": "2023-05-22T07:45:14.700265Z",
+            "modified_on": "2023-05-22T07:45:14.700265Z"
+        },
+        {
+            "id": "806275dec27fa10115103eeeacbddb9f",
+            "zone_id": "0eed8dc77fa54dde6ec0134e79e6745c",
+            "zone_name": "tavernxkobold.xyz",
+            "name": "satisfactory.tavernxkobold.xyz",
+            "type": "CNAME",
+            "content": "ddffba1b-6cbb-4fe9-b4e8-0ed9475a9e98.cfargotunnel.com",
+            "proxiable": true,
+            "proxied": true,
+            "ttl": 1,
+            "locked": false,
+            "meta": {
+                "auto_added": false,
+                "managed_by_apps": false,
+                "managed_by_argo_tunnel": false,
+                "source": "primary"
+            },
+            "comment": null,
+            "tags": [],
+            "created_on": "2023-08-12T07:08:03.773253Z",
+            "modified_on": "2023-08-12T07:08:03.773253Z"
+        },
+        {
+            "id": "f1abcf5c94cb7d28cfade8629895b6f7",
+            "zone_id": "0eed8dc77fa54dde6ec0134e79e6745c",
+            "zone_name": "tavernxkobold.xyz",
+            "name": "searx.tavernxkobold.xyz",
+            "type": "CNAME",
+            "content": "4a143e72-9735-4779-80bb-54f725fa64cd.cfargotunnel.com",
+            "proxiable": true,
+            "proxied": true,
+            "ttl": 1,
+            "locked": false,
+            "meta": {
+                "auto_added": false,
+                "managed_by_apps": false,
+                "managed_by_argo_tunnel": false,
+                "source": "primary"
+            },
+            "comment": null,
+            "tags": [],
+            "created_on": "2023-05-23T19:00:57.111279Z",
+            "modified_on": "2023-05-23T19:00:57.111279Z"
+        },
+        {
+            "id": "325cd49d2f8d92681cba1f46e59a5275",
+            "zone_id": "0eed8dc77fa54dde6ec0134e79e6745c",
+            "zone_name": "tavernxkobold.xyz",
+            "name": "tavern.tavernxkobold.xyz",
+            "type": "CNAME",
+            "content": "ddffba1b-6cbb-4fe9-b4e8-0ed9475a9e98.cfargotunnel.com",
+            "proxiable": true,
+            "proxied": true,
+            "ttl": 1,
+            "locked": false,
+            "meta": {
+                "auto_added": false,
+                "managed_by_apps": false,
+                "managed_by_argo_tunnel": false,
+                "source": "primary"
+            },
+            "comment": null,
+            "tags": [],
+            "created_on": "2023-05-22T07:42:08.81986Z",
+            "modified_on": "2023-05-22T07:43:19.573272Z"
+        },
+        {
+            "id": "027acde3fc404b50e1c49fe8ad42b36e",
+            "zone_id": "0eed8dc77fa54dde6ec0134e79e6745c",
+            "zone_name": "tavernxkobold.xyz",
+            "name": "tavernxkobold.xyz",
+            "type": "CNAME",
+            "content": "www.tavernxkobold.xyz",
+            "proxiable": true,
+            "proxied": true,
+            "ttl": 1,
+            "locked": false,
+            "meta": {
+                "auto_added": false,
+                "managed_by_apps": false,
+                "managed_by_argo_tunnel": false,
+                "source": "primary"
+            },
+            "comment": null,
+            "tags": [],
+            "created_on": "2023-05-22T17:48:55.360143Z",
+            "modified_on": "2023-05-22T17:48:55.360143Z"
+        },
+        {
+            "id": "694d7bc95280d4931d997324ef2991ab",
+            "zone_id": "0eed8dc77fa54dde6ec0134e79e6745c",
+            "zone_name": "tavernxkobold.xyz",
+            "name": "_minecraft._tcp.mc.tavernxkobold.xyz",
+            "type": "SRV",
+            "content": "0\t44849\trnfic-2a0d-6fc2-66d5-ab00-8edc-d4ff-fe31-5859.a.free.pinggy.online",
+            "priority": 0,
+            "proxiable": false,
+            "proxied": false,
+            "ttl": 1,
+            "locked": false,
+            "data": {
+                "name": "mc.tavernxkobold.xyz",
+                "port": 44849,
+                "priority": 0,
+                "proto": "_tcp",
+                "service": "_minecraft",
+                "target": "rnfic-2a0d-6fc2-66d5-ab00-8edc-d4ff-fe31-5859.a.free.pinggy.online",
+                "weight": 0
+            },
+            "meta": {
+                "auto_added": false,
+                "managed_by_apps": false,
+                "managed_by_argo_tunnel": false,
+                "source": "primary"
+            },
+            "comment": "FUCK U",
+            "tags": [],
+            "created_on": "2023-09-01T05:12:36.572487Z",
+            "modified_on": "2023-09-12T11:57:08.951604Z"
+        },
+        {
+            "id": "d73e49c84f16520d2b9d44e7950a9619",
+            "zone_id": "0eed8dc77fa54dde6ec0134e79e6745c",
+            "zone_name": "tavernxkobold.xyz",
+            "name": "_ssh._tcp.ssh.tavernxkobold.xyz",
+            "type": "SRV",
+            "content": "1\t13396\t2.tcp.eu.ngrok.io",
+            "priority": 1,
+            "proxiable": false,
+            "proxied": false,
+            "ttl": 1,
+            "locked": false,
+            "data": {
+                "name": "ssh.tavernxkobold.xyz",
+                "port": 13396,
+                "priority": 1,
+                "proto": "_tcp",
+                "service": "_ssh",
+                "target": "2.tcp.eu.ngrok.io",
+                "weight": 1
+            },
+            "meta": {
+                "auto_added": false,
+                "managed_by_apps": false,
+                "managed_by_argo_tunnel": false,
+                "source": "primary"
+            },
+            "comment": null,
+            "tags": [],
+            "created_on": "2023-09-08T18:21:14.313486Z",
+            "modified_on": "2023-09-09T09:18:26.527521Z"
+        }
+    ],
+    "success": true,
+    "errors": [],
+    "messages": [],
+    "result_info": {
+        "page": 1,
+        "per_page": 100,
+        "count": 11,
+        "total_count": 11,
+        "total_pages": 1
+    }
+}
